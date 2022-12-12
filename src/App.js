@@ -8,12 +8,15 @@ import {
   useLocation,
 } from "react-router-dom";
 import SignUpPage from "./components/SignUpPage";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div className="container">
+    <div>
       {/* <Login /> */}
-      <SignUpPage />
+      {/* <SignUpPage /> */}
+      <Main />
     </div>
   );
 }

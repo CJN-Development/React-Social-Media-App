@@ -13,13 +13,13 @@ const SignUpPage = ({ title }) => {
           <div id="email">
             <input type="text" placeholder="Email" id="Email" />
           </div>
-          <div>
+          <div id="Username">
             <input type="text" placeholder="Username" id="username" />
           </div>
-          <div>
+          <div id="Password">
             <input type="text" placeholder="Password" id="password" />
           </div>
-          <div>
+          <div id="ConfPassword">
             <input type="text" placeholder="ConfirmPassword" id="ConfPass" />
           </div>
 

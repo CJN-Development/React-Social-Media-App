@@ -10,12 +10,15 @@ const Login = ({ title }) => {
       <>
         <h1>{title}</h1>
         <form className="form-control">
-          <input type="text" placeholder="Username" id="username" />
-          <br />
-          <input type="password" placeholder="Password" id="password" />
+          <div id="Username1">
+            <input type="text" placeholder="Username" id="username" />
+          </div>
+          <div id="Password1">
+            <input type="password" placeholder="Password" id="password" />
+          </div>
 
           <Loginbutton />
-          <p>Don't have an account?</p>
+          <p id="DHAA">Don't have an account?</p>
           <Signupbutton />
         </form>
       </>
