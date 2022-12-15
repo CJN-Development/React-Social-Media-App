@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "JordanKells",
+      "LoggedIn": "True",
+      "profilepic": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/277671654_598175132030848_1296511173044825584_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ruj__B4od0YAX9UlLy_&_nc_ht=scontent-lga3-1.xx&oh=00_AfBb_HQH0qDfa15C0MiDX8HDQVfl8ZinflzlTPHeU0xj1w&oe=639FFA33",
+      "password": "Jordan123",
+      "email": "JordanKells@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "NathanGreene",
+      "LoggedIn": "False",
+      "profilepic": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1296&q=60",
+      "password": "Nathan123",
+      "email": "NathanGreene@gmail.com"
+    },
+    {
+      "id": 3,
+      "username": "CamDAmico",
+      "LoggedIn": "False",
+      "profilepic": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60",
+      "password": "Cam123",
+      "email": "CamDAmico@gmail.com"
+    },
+    {
+      "id": 4,
+      "username": "NomanAtique",
+      "LoggedIn": "False",
+      "profilepic": "https://i.ytimg.com/vi/NNiHiRnT0T0/maxresdefault.jpg",
+      "password": "Noman123",
+      "email": "NomanAtique@gmail.com"
+    },
+    {
+      "id": 5,
+      "username": "BillyBob",
+      "LoggedIn": "False",
+      "profilepic": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1296&q=60",
+      "password": "BillyBob123",
+      "email": "BillyBob@gmail.com"
+    }
+  ],
+  "posts": [
+    {
+      "PostId": "@JordanKells",
+      "profilepic": "https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/277671654_598175132030848_1296511173044825584_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ruj__B4od0YAX9UlLy_&_nc_ht=scontent-lga3-1.xx&oh=00_AfBb_HQH0qDfa15C0MiDX8HDQVfl8ZinflzlTPHeU0xj1w&oe=639FFA33",
+      "PostText": "Hate this place... Don't wanna work here no more 😭",
+      "PostPic": "https://images.unsplash.com/photo-1623156346149-d5cec8b29818?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWNkb25hbGRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60"
+    },
+    {
+      "PostId": "@NathanGreene",
+      "profilepic": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1296&q=60",
+      "PostText": "Been working hard at the gym lately! New bench PR 😳 ",
+      "PostPic": "https://plus.unsplash.com/premium_photo-1663133864420-529647314a53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVuY2glMjBwcmVzc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60"
+    },
+    {
+      "PostId": "@CamDAmico",
+      "profilepic": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60",
+      "PostText": "At the ball game!!",
+      "PostPic": "https://images.unsplash.com/photo-1533923156502-be31530547c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8QmFza2V0YmFsbCUyMGdhbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60"
+    },
+    {
+      "PostId": "@NomanAtique",
+      "profilepic": "https://i.ytimg.com/vi/NNiHiRnT0T0/maxresdefault.jpg",
+      "PostText": "Taking the dogs for a walk....  then back to teaching! 😃",
+      "PostPic": "https://images.unsplash.com/photo-1589756695365-4e0915b3a246?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8RG9nJTIwcGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60"
+    }
+  ]
+}

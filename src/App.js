@@ -1,5 +1,15 @@
 import "./App.css";
+
 import Login from "./components/Login";
+
+import Home from "./components/Home";
+
+import CreatePost from "./components/CreatePost";
+
+import Post from "./components/Post";
+
+import Header from "./components/Header";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -7,16 +17,31 @@ import {
   Link,
   useLocation,
 } from "react-router-dom";
+
 import SignUpPage from "./components/SignUpPage";
-import Header from "./components/Header";
+
 import Main from "./components/Main";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       {/* <Login /> */}
-      {/* <SignUpPage /> */}
-      <Main />
+
+      <Router>
+        <Routes>
+          <>
+            <Route path="/signup" element={<SignUpPage />}></Route>
+
+            <Route path="/" element={<Home />}>
+              {" "}
+            </Route>
+
+            <Route path="/main" element={<Main />}></Route>
+            <Route path="/CreatePost" element={<CreatePost />}></Route>
+            <Route path="/post" element={<Post />}></Route>
+          </>
+        </Routes>
+      </Router>
     </div>
   );
 }

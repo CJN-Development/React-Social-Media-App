@@ -10,15 +10,13 @@
 .container {
   width: 100%;
 
-  margin: 30px auto;
-
-  min-height: 300px;
+  height: 100vh;
 
   overflow: auto;
 
-  padding: 30px;
-
   font-weight: bold;
+
+  background-color: lightskyblue;
 }
 
 .Login h1 {
@@ -27,6 +25,7 @@
   margin-bottom: 20px;
   font-family: "Inter";
   font-size: 3rem;
+  background-color: lightskyblue;
 }
 
 .form-control {
@@ -114,7 +113,8 @@
 #Header {
   display: flex;
   justify-content: space-between;
-  background-color: lightskyblue;
+  background-color: lightcyan;
+  padding: 10px;
 }
 
 .MainPage {
@@ -131,5 +131,156 @@
 #Header h2 {
   font-family: "Inter";
   padding: 10px 15px;
+  font-size: 1.7rem;
+}
+
+#SignOutLink {
+  text-decoration: none;
+
+  padding: 10px 15px;
+  font-size: 1.3rem;
+  color: black;
+}
+
+#SignUpBtnLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+#LoginLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+#ConfSignLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+#GoBackLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+#MyFeed {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: black;
+}
+
+#CreatePost {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: black;
+}
+
+#Submit {
+  background-color: green;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.Home {
+  background-color: lightskyblue;
+}
+
+.Login {
+  background-color: lightskyblue;
+}
+
+.SignUpPage {
+  background-color: lightskyblue;
+}
+
+#Header {
+  border-bottom: 2px solid black;
+}
+
+#t {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1vh;
+}
+
+.Posts {
+  display: flex;
+  justify-content: center;
+  padding: 20px 15px;
+}
+
+#Search {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.Posts img {
+  border-radius: 45px;
+  /* border: 3px solid lightskyblue; */
+}
+
+#Posts {
+  border: 1px solid black;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  height: 490px;
+  background-color: white;
+  width: 100%;
+  margin-left: 40%;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+#PostsPic img {
+  border-radius: 50px;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+#PostsPic {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.PostId {
+  padding-top: 5%;
+  padding-left: 2%;
+  font-family: "Inter";
   font-size: 1.5rem;
+}
+
+.PostsText {
+  padding-left: 5%;
+  padding-bottom: 3%;
+  /* background-color: lightskyblue; */
+  border-radius: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#PostLikes {
+  padding-right: 5%;
+  display: flex;
+  justify-content: right;
+}
+
+#postBody {
+  /* background-color: rgb(79, 146, 173); */
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 10%;
+}
+
+#postsSize {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

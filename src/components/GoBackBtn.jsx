@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const GoBackBtn = ({ text, colour }) => {
   return (
     <button style={{ backgroundColor: colour }} className="btn">
-      {text}
+      <Link id="GoBackLink" to="/">
+        {text}
+      </Link>
     </button>
   );
 };
