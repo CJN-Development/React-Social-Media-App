@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const Signupbutton = ({ text, colour }) => {
   return (
-    <button style={{ backgroundColor: colour }} className="btn">
+    <button
+      style={{ backgroundColor: colour, borderRadius: "20px" }}
+      className="btn"
+    >
       <Link id="SignUpBtnLink" to="/signup">
         {text}
       </Link>
@@ -13,7 +16,7 @@ const Signupbutton = ({ text, colour }) => {
 
 Signupbutton.defaultProps = {
   text: "Sign up",
-  colour: "green",
+  colour: "black",
 };
 
 export default Signupbutton;

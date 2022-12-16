@@ -7,9 +7,6 @@ const Header = () => {
     <div id="Header">
       <h2 id="JNC">JNC</h2>
       <input type="text" placeholder="Search for a friend . . ." id="Search" />
-      <Link id="CreatePost" to="/CreatePost">
-        Create Post
-      </Link>
       <Link id="MyFeed" to="/Main">
         My Feed
       </Link>

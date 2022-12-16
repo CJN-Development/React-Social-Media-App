@@ -9,7 +9,7 @@ const Main = () => {
     <div className="MainPage">
       <>
         <Header />
-        {/* <MyProfile/> */}
+        <CreatePost />
         <Post />
       </>
     </div>

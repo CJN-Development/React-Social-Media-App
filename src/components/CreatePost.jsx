@@ -46,9 +46,8 @@ const CreatePost = () => {
   };
 
   return (
-    <div>
+    <div className="createPostWrapper ">
       <>
-        <Header />
         <form
           id="CreatePosts"
           onSubmit={() => addData({ PostId, profilepic, PostText, PostPic })}
