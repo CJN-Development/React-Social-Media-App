@@ -1,21 +1,31 @@
+// This is our login component that we call inside the home.jsx. It holds the form and it has all the needed state caribles that we needed to beable to login the user from our database 
+
+// We had a issue with getting the user to persist through out the app so we could get the info needed on the main page
+
+
 import PropTypes from "prop-types";
 import Signupbutton from "./SignupButton";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
+// the main function 
 const Login = ({ title }) => {
+
+  // State varibles that we used
   const [passWord, setPassWord] = useState("");
   const [userName, setUserName] = useState("");
   const [data, setData] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
-    //now fetch only users from your running server...
+    
     const getData = async () => {
       const dataFromServer = await fetchData();
       setData(dataFromServer);
     };
     getData();
   }, []);
+
+  // function that was used to fetch the users data from the db.json 
   const fetchData = async () => {
     const res = await fetch("http://localhost:5000/users");
 
@@ -23,6 +33,8 @@ const Login = ({ title }) => {
 
     return data;
   };
+
+  // this function checks if the user matches a user in the db.json and the navigates them to the main feeds page 
 
   const CheckUser = (e) => {
     data.forEach((user) => {
@@ -33,6 +45,8 @@ const Login = ({ title }) => {
     });
   };
 
+
+  // This is our from that we use to gather the info from the user so we can validate them so they can sign in 
   return (
     <div className="Login">
       <>
@@ -66,6 +80,8 @@ const Login = ({ title }) => {
     </div>
   );
 };
+
+// default props 
 
 Login.defaultProps = {
   title: "Login",

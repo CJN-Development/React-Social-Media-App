@@ -1,7 +1,14 @@
+// this is out post component wher we display the post that are found in the db.json. We got this to work quite easily and it was very fun! 
+
+
 import React, { useEffect, useState } from "react";
 
 const Post = () => {
+
+  // The state varibles post and like 
   const [post, setPost] = useState([]);
+
+  // We attempted to get a like button to work correctly but for some reason it wouldnt update correctly at all 
 
   const [like, setLike] = useState(false);
 
@@ -14,7 +21,7 @@ const Post = () => {
 
     getPosts();
   }, []);
-
+// this function fetches the post data from the db.json and then it allows us to map through all the individual things that we need 
   const fetchPosts = async () => {
     const res = await fetch("http://localhost:5000/posts");
 
@@ -22,6 +29,8 @@ const Post = () => {
 
     return post;
   };
+
+  // THIS IS WHERE WE ATTEMPTED TO SET UP A LIKE BUTTON BUT IT WOULDNT WORK AT ALL 
 
   // const [Like, setLike] = useState(post.like);
 
@@ -38,6 +47,9 @@ const Post = () => {
   //   setIsLiked(!isLiked);
   // };
 
+
+
+//  This is where we map through all the data from the posts data and then displays it to the user on the screen 
   return (
     <div id="postsSize">
       {post.map((item) => (

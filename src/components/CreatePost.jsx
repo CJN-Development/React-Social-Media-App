@@ -1,16 +1,26 @@
+// This Is Our Create Post component
+
+
+// Our imports needed for the component
 import React from "react";
 import Header from "./Header";
 import { useState, useEffect } from "react";
 
+
+// The main function 
 const CreatePost = () => {
+
+  // The State varibles 
   const [PostId, setPostId] = useState("");
   const [posts, setPosts] = useState([]);
   const [PostText, setPostText] = useState("");
   const [profilepic, setProfilePic] = useState("");
   const [PostPic, setPostPic] = useState("");
 
+
+  // Use effect function that setss our post state varible 
   useEffect(() => {
-    //now fetch only users from your running server...
+   
 
     const getPost = async () => {
       const postFromServer = await fetchPost();
@@ -21,6 +31,8 @@ const CreatePost = () => {
     getPost();
   }, []);
 
+  // Fetches the post data from the json server 
+
   const fetchPost = async () => {
     const res = await fetch("http://localhost:5000/posts");
 
@@ -29,6 +41,7 @@ const CreatePost = () => {
     return data;
   };
 
+  // this functon adds the data that is captured from the input boxes to their state varibles and POST the info to the server 
   const addData = async (user) => {
     const res = await fetch("http://localhost:5000/posts", {
       method: "POST",
@@ -45,6 +58,8 @@ const CreatePost = () => {
     setPosts([...posts, data]);
   };
 
+
+  // this is our form for the create post section 
   return (
     <div className="createPostWrapper ">
       <>

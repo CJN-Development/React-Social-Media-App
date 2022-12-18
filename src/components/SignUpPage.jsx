@@ -1,3 +1,7 @@
+// This is our sign up component that we us to add a use to the db.json.
+
+
+
 import PropTypes from "prop-types";
 
 import React from "react";
@@ -10,7 +14,11 @@ import { useState, useEffect } from "react";
 
 import { useNavigate } from "react-router-dom";
 
+// Here is the main function for the component 
+
 const SignUpPage = ({ title }) => {
+
+  // These are the state varibles that we used in the component
   const [email, setEmail] = useState("");
 
   const [username, setUserName] = useState("");
@@ -21,6 +29,7 @@ const SignUpPage = ({ title }) => {
 
   const Navigate = useNavigate();
 
+  // this is the use effect that sets the users state varible after we fetch the users data from the json server 
   useEffect(() => {
     //now fetch only users from your running server...
 
@@ -33,6 +42,8 @@ const SignUpPage = ({ title }) => {
     getData();
   }, []);
 
+
+  // This is the function that fetches the users data from the db 
   const fetchData = async () => {
     const res = await fetch("http://localhost:5000/users");
 
@@ -40,6 +51,8 @@ const SignUpPage = ({ title }) => {
 
     return data;
   };
+
+  //  this function adds tthe state varbibles values to the db.json through the POST method 
 
   const addData = async (user) => {
     const res = await fetch("http://localhost:5000/users", {
@@ -57,6 +70,8 @@ const SignUpPage = ({ title }) => {
     setUsers([...users, data]);
   };
 
+
+  // this is the form for the sign up page w take the values and then update the state varibles from it 
   return (
     <div className="SignUpPage">
       <>
