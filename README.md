@@ -1,3 +1,7 @@
+This was out last project for semester 2 at Keyin. The group members were Cameron D'amico, Jordan Kelloway, Nathan Greene
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
